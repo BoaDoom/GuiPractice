@@ -50,7 +50,7 @@ public class MyPanel extends JPanel implements ActionListener{
   p.setVisible(true);
  }
  private void updateVectors() {
-  rectX+=rectDx;
+  rectX+=rectDx;               
   rectY+=rectDy;
   ovalX+=ovalDx;
   ovalY+=ovalDy;
