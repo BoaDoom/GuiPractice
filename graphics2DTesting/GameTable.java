@@ -20,14 +20,19 @@ import javax.swing.Timer;
 
 
 public class GameTable extends JPanel implements ActionListener{
-  BufferedImage guardCard;
+  private BufferedImage guardCard;
+  private JFrame mainFrame;
+  private JPanel gameBoard;  
   public static void main(String[] args) {
-    JFrame j = new JFrame("Title");
-    JPanel p = new GameTable();
-    j.setContentPane(p);
-    j.setSize(800,600);
-    j.setVisible(true);
-    p.setVisible(true);
+    //JFrame j = new JFrame("Title");
+    //JPanel p = new GameTable();
+    JFrame mainFrame = new JFrame("Title");
+    JPanel gameBoard = new GameTable();
+    mainFrame.getC
+    mainFrame.setContentPane(gameBoard);
+    mainFrame.setSize(800,600);
+    mainFrame.setVisible(true);
+    gameBoard.setVisible(true);
   }
 
   GameTable(){
@@ -36,8 +41,8 @@ public class GameTable extends JPanel implements ActionListener{
     } catch (IOException e) {
       e.printStackTrace();
     }
-    p.add(guardCard);
-    f.setVisible(true);
+    gameBoard.add(guardCard);
+    mainFrame.setVisible(true);
   }
   @Override
   public void actionPerformed(ActionEvent arg0) {
