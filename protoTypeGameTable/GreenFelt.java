@@ -17,15 +17,20 @@ public class GreenFelt extends JPanel {
 	   mainFrame = new JFrame();
 	   gameBoard = new JPanel();
 	   dealButton = new JButton("Deal");
+
+
 	   mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	   mainFrame.setBounds(300, 150, 800, 600);
-	   
-	   gameBoard.setBounds(0, 0, 800, 600);
-	   gameBoard.setBackground(new Color(39,134,39));	//green
-	   gameBoard.add(dealButton);
-	   
-	   mainFrame.add(gameBoard); //adding the panel to the frame
+	   mainFrame.add(gameBoard); //adding the panel to the frame   
 	   mainFrame.getContentPane().add(new GraphicsDraw()); //drawer of graphics
 	   mainFrame.setVisible(true);
+
+	   gameBoard.setBounds(0, 0, 800, 600);
+	   dealButton.setBounds(100, 100, 200, 200);
+	   gameBoard.setBackground(new Color(39,134,39));	//green
+	   gameBoard.add(dealButton);
+
+	   
+
 	  }
   }

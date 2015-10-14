@@ -15,8 +15,8 @@ public class GraphicsDraw extends JPanel {
 		Graphics2D g2 = (Graphics2D) g;
     	Image img1 = Toolkit.getDefaultToolkit().getImage("C:/Java Work folder/testsyncing/love-letters-master/lovelettercards_Guard_small.jpg");
     	Image img2 = Toolkit.getDefaultToolkit().getImage("C:/Java Work folder/testsyncing/love-letters-master/lovelettercards_Guard_small.jpg");
-    	g2.drawImage(img1, 10, 10, this);
-    	g2.drawImage(img2, 20, 20, this);
+    	g2.drawImage(img1, 50, 50, this);
+    	g2.drawImage(img2, 80, 80, this);
     	g2.finalize();    
   	}
   }
